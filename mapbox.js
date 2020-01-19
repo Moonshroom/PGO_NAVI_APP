@@ -11,6 +11,14 @@ window.onload = function(){
 
 document.getElementById("directions").style.display="none"; //DIRECTIONS REMOVE
 
+var locate = new mapboxgl.GeolocateControl({
+  positionOptions: {
+  enableHighAccuracy: true
+  },
+  trackUserLocation: true
+  });
+map.addControl(locate, 'bottom-right'); //Locate the user
+
 var nav = new mapboxgl.NavigationControl();//MAP NAVIGATION
   map.addControl(nav, 'bottom-right');
 
@@ -19,6 +27,7 @@ var geocoder = new MapboxGeocoder({
     mapboxgl: mapboxgl
     });
 document.getElementById('geocoder').appendChild(geocoder.onAdd(map));//GEOCODER
+
 
 
 //HEATMAP
