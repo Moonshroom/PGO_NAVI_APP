@@ -13,6 +13,7 @@ body
         bottom:0; 
         width:100%; 
         height: 100%;
+        padding: 0px;
     }
 
 .geocoder 
@@ -233,10 +234,10 @@ label:active:after
     {
         .info-box   
         {
-            position: relative;
+            position: fixed;
             margin: auto;
-            height: 95%;
-            width: 95%;
+            height: 100%;
+            width: 100%;
             font-size: 0.6em;
         }
     }
