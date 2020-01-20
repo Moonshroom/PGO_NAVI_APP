@@ -178,6 +178,7 @@ function getInstructions(data) {
     ;
     document.getElementById("directions").style.display="block";
 
+    
   // If the user clicks the delete draw button, remove the layer if it exists
 function removeRoute() {
     if (map.getSource('route')) {
@@ -230,7 +231,10 @@ window.onerror = function(message, url, line) {
 };
 
 //GoogleMaps opening 
-function abc() {window.open("https://www.google.com/maps/@52.3836996,16.8772574,14z")} ;
+function abc() 
+  {
+    window.open("https://www.google.com/maps/@52.3836996,16.8772574,14z")
+  };
 
 //GOOGLE MAPS 
 /*function initialize() {
@@ -262,36 +266,3 @@ var jsonData = {
     }
   }]
 };*/
-
-function hideshow() 
-{
-  var x = document.getElementById("remove");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-};
-// tutorial movie show 
-function hideshow_tutorial() 
-{ 
-  tutorial_movie.innerHTML = '<iframe width="94%" height="100%" src="https://www.youtube.com/embed/PygxkWJ3TNQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' + '<button class="movie" type="button" onclick="closingtuto()">X</button>';
-  document.getElementById('tutorial_movie').style.display = "block";
-};
-//tutorial movie close
-function closingtuto ()
-{
-  document.getElementById('tutorial_movie').style.display = "none";
-};
-//starting introjs
-function starttutorial() 
-{
-  document.getElementById("remove").style.display = "none";
-  introJs().start();
-};
-
-//error detecting
-window.onerror = function(message, url, line) {
-  alert('Sorry, but we need to reload this page' + ', ' + 'More accurate information about ERROR :' + message + ', ' + url + ', ' + line);
-  window.location.reload(true);
-};
