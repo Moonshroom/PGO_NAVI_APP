@@ -307,30 +307,7 @@ label:active:after
         font-weight: bold;
     }
 
-@media only screen and (max-width: 900px) and (min-width: 300px) 
-    {
-        #directions   
-        {
-            position: fixed;
-            z-index: 2;
-            margin: auto;
-            height: 70%;
-            width: 50%;
-            top: 3em;
-            bottom: 1em;
-            padding: 1em;
-            background-color: rgba(34, 34, 34, 0.9);
-            overflow-y: scroll;
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 0.8em;
-            line-height: 2em;
-            font-size: 16px;
-            font-weight: bold;
-        }
-    }
-    
-#gm 
+    #gm 
     {
         background-color: #4CAF50;
         border: none;
@@ -343,6 +320,40 @@ label:active:after
         margin: 4px 2px;
         cursor: pointer;
     }
+@media only screen and (max-width: 900px) and (min-width: 200px) 
+    {
+        #directions   
+        {
+            position: fixed;
+            z-index: 2;
+            top: 105%;
+            margin: auto;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            height: 15%;
+            width: 50%;
+            padding: 1em;
+            background-color: rgba(34, 34, 34, 0.9);
+            overflow-y: scroll;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.8em;
+            line-height: 2em;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        h2
+        {
+            margin-top: 10px;
+            text-align: center;
+        }
+        #gm
+        {
+            display: none;
+        }
+    }
+    
+
 
 .movie
     {
